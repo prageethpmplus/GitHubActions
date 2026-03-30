@@ -1,0 +1,27 @@
+name: Run Shell Commands
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  run-shell:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run shell commands
+        run: |
+          echo "Hello, World!"
+          pwd
+          ls -la
+          date
+
+      - name: Run a script file
+        run: bash scripts/my-script.sh  # Optional: run a script from your repo
+
