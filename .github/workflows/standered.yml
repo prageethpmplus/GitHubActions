@@ -24,4 +24,3 @@ jobs:
 
       - name: Run a script file
         run: bash scripts/my-script.sh  # Optional: run a script from your repo
-
