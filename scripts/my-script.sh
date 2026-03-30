@@ -1,3 +1,3 @@
 !#/bin/bash
 
-0echo "Wedding"
+echo "Wedding"
